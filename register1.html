@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <div>
+        <form method="post" action="#" name="register" id="register">
+            <fieldset>
+                <legend> User Register</legend>
+                <label>Username</label><br>
+                <input type="text" name="username" required>
+                <br>
+                <label> Password</label><br>
+                <input type="password" name="password" required>
+                <br>
+                <label>Email</label><br>
+                <input type="email" name="email" required>
+                <br>
+                <label>Gender</label><br>
+                <input type="radio" name="gender" value="male" >Male
+                <input type="radio" name="gender" value="female">female
+                <input type="radio" name="gender" value="other" checked> Others
+                <br>
+                <label>Date Of Birth</label><br>
+                <input type="date" name="date" required>
+                <br>
+                <label>Image</label><br>
+                <input type="file" name="photo">
+                <br>
+                <label>Your City</label><br> 
+                <select name="city" size="1">
+                    <option value="">---Please Choose---</option>
+                    <option value="ktm">Kathmandu</option>
+                    <option value="ltp">Lalitpur</option>
+                    <option value="bkt">Bhaktapur</option>
+                    <option value="oth" selected>Others</option>
+                </select>
+                
+                <br>
+                <Label> Your Message for us</label><br>
+                <textarea rows="10" cols="50" name="message"></textarea>
+                <br>
+                <input type="checkbox" name="iagree" id="iagree" required>
+                <br>
+                <input type="reset" name="reset" id="reset" value="Clear">
+               <input type="button"name="register" id="register" value="Register">
+                
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
